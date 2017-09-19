@@ -1,13 +1,20 @@
 import React, { Component } from 'react';
-import './styles/App.css';
+import moment from 'moment';
+import EarthquakeInfo from './EarthquakeInfo.js';
+import EarthquakeList from './EarthquakeList.js';
+import '../styles/App.css';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <div className="title">
+          <div className="my-header">
+          Earthquake!
+          </div>
+        </div>
+        <EarthquakeInfo />
+        <EarthquakeList />
       </div>
     );
   }
